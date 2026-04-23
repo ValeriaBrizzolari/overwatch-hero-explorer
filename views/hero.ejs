@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hero Details</title>
+
+    <link rel="stylesheet" href="/styles/hero.css" />
+
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header>
+      <h1><%= hero.name %></h1>
+      <p><%= hero.role %></p>
+    </header>
+
+    <main class="hero-container">
+      <div class="hero-card">
+        <img src="<%= hero.portrait %>" alt="Hero portrait" />
+
+        <div class="hero-content">
+          <h2>Overview</h2>
+          <p class="description"><%= hero.description %></p>
+
+          <div class="hero-info">
+            <p><strong>Specialty:</strong> <%= hero.location %></p>
+          </div>
+
+          <div class="abilities">
+            <h2>Abilities</h2>
+
+            <ul>
+                <% hero.abilities.forEach((ability)=>{ %>
+              <li><%= ability.name %></li>
+              <% }) %>
+            </ul>
+          </div>
+
+          <a href="/" class="back-btn">← Back to Heroes</a>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,171 @@
+/* ===== RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===== BASE ===== */
+body {
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  color: #f1f5f9;
+  font-family: "Rajdhani", sans-serif;
+}
+
+/* ===== TYPOGRAPHY ===== */
+h1,
+h2,
+h3 {
+  font-family: "Orbitron", sans-serif;
+  letter-spacing: 1px;
+}
+
+/* ===== HEADER ===== */
+header {
+  font-size: 2.5rem;
+  text-align: center;
+  padding: 3rem 1rem 2rem;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  color: #facc15;
+  text-shadow: 0 0 10px rgba(250, 204, 21, 0.4);
+  margin-bottom: 0.5rem;
+}
+
+header p {
+  font-size: 1.2rem;
+  color: #cbd5f5;
+}
+
+/* ===== MAIN CONTAINER ===== */
+.main-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+/* ===== GRID ===== */
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 24px;
+}
+
+/* ===== HERO CARD ===== */
+.hero-card {
+  background: rgba(15, 23, 42, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+}
+
+.hero-card:hover {
+  transform: translateY(-6px) scale(1.02);
+  border-color: #facc15;
+  box-shadow: 0 12px 30px rgba(250, 204, 21, 0.2);
+}
+
+/* ===== IMAGE ===== */
+.hero-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 12px;
+}
+
+/* ===== TEXT ===== */
+.hero-card h3 {
+  margin-bottom: 8px;
+}
+
+.role {
+  color: #38bdf8;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 0.85rem;
+  margin-bottom: 8px;
+}
+
+.description {
+  color: #cbd5f5;
+  font-size: 0.9rem;
+  margin-bottom: 16px;
+}
+
+/* ===== BUTTON ===== */
+.btn {
+  margin-top: auto;
+  border: 1px solid #facc15;
+  color: #facc15;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+  text-align: center;
+  transition: all 0.2s ease;
+}
+
+.btn:hover {
+  background-color: #facc15;
+  color: #0f172a;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #94a3b8;
+}
+/* ===== RESPONSIVE GRID ===== */
+
+@media (max-width: 1100px) {
+  .cards-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 800px) {
+  .cards-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .cards-container {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  .hero-card {
+    width: 85%;
+    max-width: 300px;
+    padding: 12px;
+  }
+
+  .hero-card img {
+    height: 140px;
+  }
+
+  .hero-card h3 {
+    font-size: 1rem;
+  }
+
+  .role {
+    font-size: 0.75rem;
+  }
+
+  .description {
+    font-size: 0.8rem;
+  }
+
+  .btn {
+    padding: 6px 10px;
+    font-size: 0.8rem;
+  }
+}

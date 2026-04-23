@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Overwatch Hero Explorer</title>
+    <link rel="stylesheet" href="/styles/main.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    
+
+    <header> 
+      <h1>Overwatch Hero Explorer</h1>
+      <p>Browse all Overwatch heroes</p>
+    </header>
+    
+    <main class="main-container">
+      <div class="cards-container">
+        <% if(locals.hero){ %>
+    <% hero.forEach((hero) =>{ %>
+       
+        <div class="hero-card">
+          <img src="<%= hero.portrait %>" alt="Hero portrait" />
+
+          <h3><%= hero.name %></h3>
+
+          <p class="role"><%= hero.role %></p>
+
+          <a href="/hero/<%= hero.key %>" class="btn"> View Hero </a>
+        </div>
+         <% }) %>
+    <% } %>
+        
+      </div>
+    </main>
+   
+    <footer>
+      <small>Built with Express, Axios & EJS</small>
+    </footer>
+    
+  </body>
+</html>
