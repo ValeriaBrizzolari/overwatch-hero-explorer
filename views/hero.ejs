@@ -25,30 +25,84 @@
     </header>
 
     <main class="hero-container">
-      <div class="hero-card">
-        <img src="<%= hero.portrait %>" alt="Hero portrait" />
+  <section class="hero-card">
+    <div class="hero-top">
+      <div class="hero-image-wrapper">
+        <img src="<%= hero.portrait %>" alt="<%= hero.name %> portrait" />
+      </div>
 
-        <div class="hero-content">
+      <div class="hero-content">
+        <section class="overview">
           <h2>Overview</h2>
           <p class="description"><%= hero.description %></p>
 
           <div class="hero-info">
             <p><strong>Specialty:</strong> <%= hero.location %></p>
           </div>
-
-          <div class="abilities">
-            <h2>Abilities</h2>
-
-            <ul>
-                <% hero.abilities.forEach((ability)=>{ %>
-              <li><%= ability.name %></li>
-              <% }) %>
-            </ul>
-          </div>
-
-          <a href="/" class="back-btn">← Back to Heroes</a>
-        </div>
+        </section>
       </div>
-    </main>
+    </div>
+
+    <section class="abilities-section">
+      <h2>Abilities</h2>
+
+      <div class="abilities-grid">
+        <% hero.abilities.forEach((ability) => { %>
+          <article class="ability-card">
+            <div class="ability-icon-wrapper">
+              <img
+                class="ability-icon"
+                src="<%= ability.icon %>"
+                alt="<%= ability.name %> icon"
+              />
+            </div>
+
+            <h3><%= ability.name %></h3>
+            <p><%= ability.description %></p>
+          </article>
+        <% }) %>
+      </div>
+    </section>
+
+ <section class="story-section">
+  <h2>Story</h2>
+
+  <div class="story-summary">
+    <p><%= hero.story.summary %></p>
+  </div>
+
+  <% if (hero.story.media && hero.story.media.link) { %>
+    <div class="story-video">
+      <iframe
+        src="https://www.youtube.com/embed/<%= hero.story.media.link.split('youtu.be/')[1] %>"
+        title="Hero Story Video"
+        frameborder="0"
+        allowfullscreen
+      ></iframe>
+    </div>
+  <% } %>
+</section>
+
+<section class="chapters-section">
+  <h2>Chapters</h2>
+
+  <div class="chapters-grid">
+    <% hero.story.chapters.forEach((chapter) => { %>
+      <article class="chapter-card">
+        <img src="<%= chapter.picture %>" alt="<%= chapter.title %>" />
+
+        <h3><%= chapter.title %></h3>
+
+        <p><%= chapter.content %></p>
+      </article>
+    <% }) %>
+  </div>
+</section>
+
+
+
+    <a href="/" class="back-btn">← Back to Heroes</a>
+  </section>
+</main>
   </body>
 </html>
