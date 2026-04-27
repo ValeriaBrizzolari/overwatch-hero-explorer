@@ -64,6 +64,71 @@
       </div>
     </section>
 
+    <% if (perks) { %>
+  <section class="perks-section">
+    <h2>Perks</h2>
+
+    <p class="perks-description">
+      Unlock mid-match upgrades to outsmart, outplay, and dominate the fight.
+    </p>
+
+    <div class="perk-row">
+      <div class="perk-card">
+        <h4><%= perks.minor.perks[0].name %></h4>
+        <p><%= perks.minor.perks[0].description %></p>
+      </div>
+
+      <div class="perk-center">
+        <p class="perk-label">Minor Perk</p>
+        <p class="perk-level">Level <%= perks.minor.level %></p>
+
+        <div class="perk-icons">
+          <div class="perk-icon-circle">
+            <img src="<%= perks.minor.perks[0].icon %>" alt="<%= perks.minor.perks[0].name %> icon" />
+          </div>
+
+          <div class="perk-icon-circle">
+            <img src="<%= perks.minor.perks[1].icon %>" alt="<%= perks.minor.perks[1].name %> icon" />
+          </div>
+        </div>
+      </div>
+
+      <div class="perk-card">
+        <h4><%= perks.minor.perks[1].name %></h4>
+        <p><%= perks.minor.perks[1].description %></p>
+      </div>
+    </div>
+
+    <div class="perk-row">
+      <div class="perk-card">
+        <h4><%= perks.major.perks[0].name %></h4>
+        <p><%= perks.major.perks[0].description %></p>
+      </div>
+
+      <div class="perk-center">
+        <p class="perk-label">Major Perk</p>
+        <p class="perk-level">Level <%= perks.major.level %></p>
+
+        <div class="perk-icons">
+          <div class="perk-icon-circle">
+            <img src="<%= perks.major.perks[0].icon %>" alt="<%= perks.major.perks[0].name %> icon" />
+          </div>
+
+          <div class="perk-icon-circle">
+            <img src="<%= perks.major.perks[1].icon %>" alt="<%= perks.major.perks[1].name %> icon" />
+          </div>
+        </div>
+      </div>
+
+      <div class="perk-card">
+        <h4><%= perks.major.perks[1].name %></h4>
+        <p><%= perks.major.perks[1].description %></p>
+      </div>
+    </div>
+  </section>
+<% } %>
+
+
  <section class="story-section">
   <h2>Story</h2>
 
