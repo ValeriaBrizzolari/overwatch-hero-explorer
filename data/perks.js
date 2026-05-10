@@ -1265,4 +1265,75 @@ export const perks = {
       ],
     },
   },
+  sierra: {
+    minor: {
+      level: 2,
+      perks: [
+        {
+          name: "Full Flight",
+          description:
+            "Increase Anchor Drone flight and grapple ranges by 25%.",
+          icon: "/images/perks/full-flight.png",
+        },
+        {
+          name: "Tight Grip",
+          description:
+            "Helix Rifle's bullet spread tightens 100% faster and widens 30% slower.",
+          icon: "/images/perks/tight-grip.png",
+        },
+      ],
+    },
+    major: {
+      level: 3,
+      perks: [
+        {
+          name: "Medi-Drone",
+          description: "Anchor Drones hold a medkit that can heal Sierra.",
+          icon: "/images/perks/medi-drone.png",
+        },
+        {
+          name: "Locked In",
+          description:
+            "Firing Tracking Shot increases your attack speed by 20% for 2 seconds.",
+          icon: "/images/perks/locked-in.png",
+        },
+      ],
+    },
+  },
+  sigma: {
+    minor: {
+      level: 2,
+      perks: [
+        {
+          name: "Kinetic Cycle",
+          description:
+            "Absorbing projectiles with Kinetic Grasp also reduces Accretion's cooldown.",
+          icon: "/images/perks/kinetic-cycle.png",
+        },
+        {
+          name: "Hyper Regeneration",
+          description:
+            "40% of Hyperspheres' damage restores Experimental Barrier's health.",
+          icon: "/images/perks/hyper-regeneration.png",
+        },
+      ],
+    },
+    major: {
+      level: 3,
+      perks: [
+        {
+          name: "Hyper Strike",
+          description:
+            "Every 5 direct hits with Hyperspheres, your next successful Quick Melee levitates and knocks away enemies.",
+          icon: "/images/perks/hyper-strike.png",
+        },
+        {
+          name: "Levitation",
+          description:
+            "Activate and hold Double Jump to briefly levitate upward.",
+          icon: "/images/perks/levitation.png",
+        },
+      ],
+    },
+  },
 };
