@@ -1336,4 +1336,457 @@ export const perks = {
       ],
     },
   },
+  sojourn: {
+    minor: {
+      level: 2,
+      perks: [
+        {
+          name: "Overcharged",
+          description:
+            "Railgun's maximum energy is increased by 50 while Overclock is active.",
+          icon: "/images/perks/overcharged.png",
+        },
+        {
+          name: "Deceleration Field",
+          description: "Enemies hit by Disruptor Shot are slowed by 25%.",
+          icon: "/images/perks/deceleration-field.png",
+        },
+      ],
+    },
+    major: {
+      level: 3,
+      perks: [
+        {
+          name: "Friction Generators",
+          description: "While sliding, Power Slide generates up to 50 energy.",
+          icon: "/images/perks/friction-generators.png",
+        },
+        {
+          name: "Dual Thrusters",
+          description:
+            "Power Slide gains an additional charge and its jump height shifts to lateral movement.",
+          icon: "/images/perks/dual-thrusters.png",
+        },
+      ],
+    },
+  },
+  "soldier-76": {
+    minor: {
+      level: 2,
+      perks: [
+        {
+          name: "Helix Propulsion",
+          description: "Helix Rockets' projectile speed is increased by 50%.",
+          icon: "/images/perks/helix-propulsion.png",
+        },
+        {
+          name: "Tactical Salvo",
+          description:
+            "During Tactical Visor, Helix Rockets' cooldown is reduced by 80% and no longer interrupts firing Heavy Pulse Rifle.",
+          icon: "/images/perks/tactical-salvo.png",
+        },
+      ],
+    },
+    major: {
+      level: 3,
+      perks: [
+        {
+          name: "Full Stride",
+          description:
+            "Sprint's movement speed bonus gradually increases by an additional 25% over 2 seconds.",
+          icon: "/images/perks/full-stride.png",
+        },
+        {
+          name: "Stim Pack",
+          description:
+            "Stim Pack replaces Biotic Field. On use, Soldier: 76 heals for 30 health per second and gains 20% increased attack speed for 5 seconds.",
+          icon: "/images/perks/stim-pack.png",
+        },
+      ],
+    },
+  },
+  sombra: {
+    minor: {
+      level: 2,
+      perks: [
+        {
+          name: "Encrypted Upload",
+          description:
+            "Hack can be used while invisible. Successful hacks increase the duration of Stealth by 3 seconds.",
+          icon: "/images/perks/encrypted-upload.png",
+        },
+        {
+          name: "CTRL ALT ESC",
+          description:
+            "Teleporting with Translocator while below half health initiates passive health regeneration.",
+          icon: "/images/perks/ctrl-alt-esc.png",
+        },
+      ],
+    },
+    major: {
+      level: 3,
+      perks: [
+        {
+          name: "High-Speed Bandwidth",
+          description:
+            "Hacked health packs provide allies with 25% increased movement speed and 50 overhealth for 4 seconds.",
+          icon: "/images/perks/high-speed-bandwidth.png",
+        },
+        {
+          name: "Viral Replication",
+          description:
+            "Hitting a hacked enemy with Virus spreads Virus to enemies within 8 meters.",
+          icon: "/images/perks/viral-replication.png",
+        },
+      ],
+    },
+  },
+  symmetra: {
+    minor: {
+      level: 2,
+      perks: [
+        {
+          name: "Sentry Capacity",
+          description: "Sentry Turret gains an additional charge.",
+          icon: "/images/perks/sentry-capacity.png",
+        },
+        {
+          name: "Perfect Alignment",
+          description:
+            "Increase the range of Photon Projector's primary fire by 20%.",
+          icon: "/images/perks/perfect-alignment.png",
+        },
+      ],
+    },
+    major: {
+      level: 3,
+      perks: [
+        {
+          name: "Hovering Barrier",
+          description:
+            "Teleporter gains the option to create a forward moving barrier instead. Pressing E again slows down the barrier's movement.",
+          icon: "/images/perks/hovering-barrier.png",
+        },
+        {
+          name: "Shield Battery",
+          description:
+            "Symmetra regenerates 20 shields per second while within 10 meters of her Teleporter.",
+          icon: "/images/perks/shield-battery.png",
+        },
+      ],
+    },
+  },
+  torbjorn: {
+    minor: {
+      level: 2,
+      perks: [
+        {
+          name: "Hammer Time",
+          description: "Move 20% faster while Forge Hammer is equipped.",
+          icon: "/images/perks/hammer-time.png",
+        },
+        {
+          name: "Pre-Heated",
+          description: "Molten Core activates Overload.",
+          icon: "/images/perks/pre-heated.png",
+        },
+      ],
+    },
+    major: {
+      level: 3,
+      perks: [
+        {
+          name: "Anchor Bolts",
+          description:
+            "Deploy Turret's throw range is increased by 50% and it can now attach to walls and ceilings.",
+          icon: "/images/perks/anchor-bolts.png",
+        },
+        {
+          name: "Overloaded Turret",
+          description:
+            "Overload upgrades your Turret for 5 seconds, increasing its health and damage.",
+          icon: "/images/perks/overloaded-turret.png",
+        },
+      ],
+    },
+  },
+  tracer: {
+    minor: {
+      level: 2,
+      perks: [
+        {
+          name: "Chronal Dash",
+          description: "Blink distance is increased by 20%.",
+          icon: "/images/perks/chronal-dash.png",
+        },
+        {
+          name: "Kinetic Reload",
+          description: "Melee hits grant 20 ammo.",
+          icon: "/images/perks/kinetic-reload.png",
+        },
+      ],
+    },
+    major: {
+      level: 3,
+      perks: [
+        {
+          name: "Blink Packs",
+          description: "Health Packs restore 1 Blink charge.",
+          icon: "/images/perks/blink-packs.png",
+        },
+        {
+          name: "Quantum Entanglement",
+          description:
+            "Recall grants 50 overhealth and 20 ammo that decays over time.",
+          icon: "/images/perks/quantum-entanglement.png",
+        },
+      ],
+    },
+  },
+  vendetta: {
+    minor: {
+      level: 2,
+      perks: [
+        {
+          name: "Extra Edge",
+          description: "Projected Edge costs 25% less energy.",
+          icon: "/images/perks/extra-edge.png",
+        },
+        {
+          name: "Raging Storm",
+          description:
+            "Whirlwind Dash continues to spin, hitting 3 more times for 30 damage in a wide area.",
+          icon: "/images/perks/raging-storm.png",
+        },
+      ],
+    },
+    major: {
+      level: 3,
+      perks: [
+        {
+          name: "Siphoning Strike",
+          description: "Overhead strikes gain 40% Lifesteal.",
+          icon: "/images/perks/siphoning-strike.png",
+        },
+        {
+          name: "Relentless",
+          description:
+            "Onslaught can stack 3 more times, increasing attack speed by 5% and movement speed by 2% per stack.",
+          icon: "/images/perks/relentless.png",
+        },
+      ],
+    },
+  },
+  venture: {
+    minor: {
+      level: 2,
+      perks: [
+        {
+          name: "Deep Burrow",
+          description: "Drill Dash distance is 50% longer while burrowed.",
+          icon: "/images/perks/deep-burrow.png",
+        },
+        {
+          name: "Excavation Exhilaration",
+          description:
+            "While Tectonic Shock is active, cooldowns refresh 300% faster.",
+          icon: "/images/perks/excavation-exhilaration.png",
+        },
+      ],
+    },
+    major: {
+      level: 3,
+      perks: [
+        {
+          name: "SMART Extender",
+          description:
+            "Empower SMART Excavator with E to increase its maximum projectile range by 100% for 4 seconds.",
+          icon: "/images/perks/smart-extender.png",
+        },
+        {
+          name: "Covered In Dirt",
+          description:
+            "Dealing damage with Clobber grants up to 30 Explorer's Resolve shields.",
+          icon: "/images/perks/covered-in-dirt.png",
+        },
+      ],
+    },
+  },
+  winston: {
+    minor: {
+      level: 2,
+      perks: [
+        {
+          name: "Electric Charge",
+          description:
+            "Winston gains 10% movement speed for each enemy he is damaging with Tesla Cannon's primary fire, up to 30%.",
+          icon: "/images/perks/electric-charge.png",
+        },
+        {
+          name: "Heavy Landing",
+          description:
+            "During Primal Rage, Jump Pack's damage and area increase by up to 75% while airborne.",
+          icon: "/images/perks/heavy-landing.png",
+        },
+      ],
+    },
+    major: {
+      level: 3,
+      perks: [
+        {
+          name: "Chain Lightning",
+          description:
+            "Fully charged Secondary Fire hits bounce to up to 2 additional targets.",
+          icon: "/images/perks/chain-lightning.png",
+        },
+        {
+          name: "Revitalizing Barrier",
+          description:
+            "Barrier Projector heals allies within it for 30 health per second.",
+          icon: "/images/perks/revitalizing-barrier.png",
+        },
+      ],
+    },
+  },
+  "wrecking-ball": {
+    minor: {
+      level: 2,
+      perks: [
+        {
+          name: "Steamroller",
+          description: "Roll impacts deal 100% more damage to Tanks.",
+          icon: "/images/perks/steamroller.png",
+        },
+        {
+          name: "Multi-Ball",
+          description:
+            "Press Q within 5 seconds after using Minefield to deploy 7 additional mines.",
+          icon: "/images/perks/multi-ball.png",
+        },
+      ],
+    },
+    major: {
+      level: 3,
+      perks: [
+        {
+          name: "Hang Time",
+          description:
+            "Piledriver winds up longer, gaining air control and dealing up to 50% more damage.",
+          icon: "/images/perks/hang-time.png",
+        },
+        {
+          name: "Adaptive Barrier",
+          description:
+            "Adaptive Shield generates a 1.5 second barrier on activation.",
+          icon: "/images/perks/adaptive-barrier.png",
+        },
+      ],
+    },
+  },
+  wuyang: {
+    minor: {
+      level: 2,
+      perks: [
+        {
+          name: "Overflow",
+          description:
+            "Gain 10 ammo and 50% healing resource when Rushing Torrent is activated.",
+          icon: "/images/perks/overflow.png",
+        },
+        {
+          name: "Balance",
+          description:
+            "When you deal damage with water orbs, increase Restorative Stream's passive healing by 30% for 2 seconds.",
+          icon: "/images/perks/balance.png",
+        },
+      ],
+    },
+    major: {
+      level: 3,
+      perks: [
+        {
+          name: "Ebb and Flow",
+          description:
+            "Guardian Wave rewinds to its starting location. Has 50% less effectiveness while rewinding.",
+          icon: "/images/perks/ebb-and-flow.png",
+        },
+        {
+          name: "Falling Rain",
+          description:
+            "Simultaneously control 3 water orbs that deal 60% decreased damage and have 25% decreased empowered explosion radius.",
+          icon: "/images/perks/falling-rain.png",
+        },
+      ],
+    },
+  },
+  zarya: {
+    minor: {
+      level: 2,
+      perks: [
+        {
+          name: "Jump-Ups",
+          description: "Secondary Fire's self-knockback is increased by 75%.",
+          icon: "/images/perks/jump-ups.png",
+        },
+        {
+          name: "Spotter",
+          description:
+            "Projected Barrier activates ally health regeneration and increases their movement speed by 20%.",
+          icon: "/images/perks/spotter.png",
+        },
+      ],
+    },
+    major: {
+      level: 3,
+      perks: [
+        {
+          name: "Extra Oomph",
+          description:
+            "While a Barrier is active, dealing damage with Particle Cannon's beam generates energy.",
+          icon: "/images/perks/extra-oomph.png",
+        },
+        {
+          name: "Energy Lance",
+          description: "Particle Cannon's beam pierces enemies.",
+          icon: "/images/perks/energy-lance.png",
+        },
+      ],
+    },
+  },
+  zenyatta: {
+    minor: {
+      level: 2,
+      perks: [
+        {
+          name: "Discordant Repair",
+          description:
+            "Zenyatta gains 10% lifesteal against enemies with Discord Orb.",
+          icon: "/images/perks/discordant-repair.png",
+        },
+        {
+          name: "Ascendance",
+          description:
+            "Activate and hold Double Jump to hover for up to 3 seconds.",
+          icon: "/images/perks/ascendance.png",
+        },
+      ],
+    },
+    major: {
+      level: 3,
+      perks: [
+        {
+          name: "Focused Destruction",
+          description:
+            "Secondary Fire charges 20% faster and can store 1 extra Orb of Destruction.",
+          icon: "/images/perks/focused-destruction.png",
+        },
+        {
+          name: "Dual Harmony",
+          description:
+            "Gain a 2nd Harmony Orb but they both heal for 70% effectiveness.",
+          icon: "/images/perks/dual-harmony.png",
+        },
+      ],
+    },
+  },
 };
